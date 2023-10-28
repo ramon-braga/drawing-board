@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@300;400;500;700&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #DDD;
+    margin-bottom: 20px;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 4rem;
+}
+
+#canvas {
+    border: 2px solid #000;
+    background-color: #DDD;
+    cursor: crosshair;
+}
+
+.colorArea {
+    width: 800px;
+    display: flex;
+}
+.color {
+    flex: 1;
+    height: 40px;
+    cursor: pointer;
+}
+.color.active {
+    border: 5px solid #FFF;
+}
+
+.clear {
+    border: 1px solid #000;
+    background-color: #4977db;
+    color: #DDD;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2ms;
+}
+
+.clear:hover{
+    color: #FFF;
+   opacity: 0.9;
+}
+
+.clear:active{
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: 20px;
+    color: #DDD;
+    font-size: 13px;
+}
